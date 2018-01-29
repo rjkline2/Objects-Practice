@@ -15,12 +15,18 @@ namespace Objects_Practice
         private int age;
         private string furColor;
         private bool isHungry = true;
+        private string hairLength;
 
        // Properties
         public string Name
         {
             get { return this.name; }
             set { this.name = value; }
+        }
+        public string HairLength
+        {
+            get { return this.hairLength; }
+            set { this.hairLength = value; }
         }
        // BEHAVIORS
         // Contructors
@@ -48,5 +54,16 @@ namespace Objects_Practice
         {
             Console.WriteLine("\a");
         }
+        public string Hairball()
+        {
+            if (hairLength == "too long")
+            {
+                return (this.name + " needs a haircut");
+            }
+            else
+            {
+                return (this.name + "is nicely groomed");
+            }
+        }   
     }
 }
