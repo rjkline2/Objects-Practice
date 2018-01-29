@@ -8,5 +8,17 @@ namespace Objects_Practice
 {
     class Cat
     {
+        //I need STATES
+        
+            //fields
+        private string name;
+
+       // I need BEHAVIORS
+        // Contructors
+       public Cat()
+        {
+            //default contructor
+            //takes no parameters (nothing in the parentheses)
+        }
     }
 }
