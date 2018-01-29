@@ -8,27 +8,26 @@ namespace Objects_Practice
 {
     class Cat
     {
-        //I need STATES
+        //STATES
         
-            //fields
+       //fields
         private string name;
         private int age;
         private string furColor;
         private bool isHungry = true;
 
-
-        // Properties
+       // Properties
         public string Name
         {
             get { return this.name; }
             set { this.name = value; }
         }
-       // I need BEHAVIORS
+       // BEHAVIORS
         // Contructors
        public Cat()
         {
             //default contructor
-            //takes no parameters (nothing in the parentheses, ever.)
+            //takes no parameters (nothing in the parentheses)
         }
         public Cat(string name, int age, string furColor)
         {
@@ -38,11 +37,16 @@ namespace Objects_Practice
         }
         public void Eat()
         {
-            if (isHungry)
+            if (isHungry)//this means if isHungry is set to true...NOTE!!!
             {
                 isHungry = false;
             }
             Console.WriteLine("Is the cat hungry?" + isHungry );
+        }
+
+        public void Meow()
+        {
+            Console.WriteLine("\a");
         }
     }
 }
